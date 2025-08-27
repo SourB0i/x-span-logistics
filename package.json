@@ -1,0 +1,13 @@
+{
+  "name": "xspanlogistics",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "serve -l 5173",
+    "start": "serve -l 5173",
+    "build": "echo \"Static site - no build step\""
+  },
+  "devDependencies": {
+    "serve": "^14.2.3"
+  }
+}

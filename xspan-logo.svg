@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 122" role="img" aria-label="Xspan Logistics Logo">
+  <defs>
+    <style>
+      .x { fill: #f4b224; }
+      .green { fill: #0b7a3e; }
+    </style>
+  </defs>
+  <rect width="288" height="122" fill="none"/>
+  <!-- Stylized X -->
+  <path class="x" d="M55 15c12-6 27-1 31 12 3 9-1 19-7 25l-10 10 12 18c7 11 2 26-10 32s-26 2-32-9l-8-16-6 5c-10 8-25 6-33-4s-6-25 4-33l50-40z"/>
+  <!-- SPAN text (simplified vector approximation) -->
+  <g class="green">
+    <path d="M110 52c0-10 9-18 22-18 8 0 14 2 18 6l-7 8c-3-3-6-4-11-4-6 0-10 4-10 8s4 7 12 8c12 2 20 7 20 17s-10 18-25 18c-9 0-17-3-22-9l7-8c4 4 9 6 15 6 7 0 12-3 12-7s-4-7-12-9c-12-2-19-8-19-18z"/>
+    <path d="M178 36h13l23 52h-14l-4-10h-22l-4 10h-13l21-52zm14 30-7-16-7 16h14z"/>
+    <path d="M223 36h12v21h22V36h12v52h-12V66h-22v22h-12V36z"/>
+  </g>
+  <!-- LOGISTICS small text -->
+  <g class="green" fill="#0b7a3e">
+    <rect x="110" y="92" width="120" height="2" rx="1"/>
+    <text x="170" y="108" text-anchor="middle" font-size="16" font-family="Arial, Helvetica, sans-serif" font-weight="700">LOGISTICS</text>
+  </g>
+</svg>
