@@ -178,33 +178,6 @@ function XspanSite() {
         </div>
       </section>
 
-      {/* Customers */}
-      <section id="customers" className="py-12 md:py-20">
-        <div className="max-w-6xl mx-auto px-4 md:px-6">
-          <div className="rounded-3xl border border-slate-200 bg-white shadow-sm p-8 md:p-10">
-            <div className="mb-8 text-center">
-              <h2 className="text-3xl font-extrabold">Our Customers</h2>
-              <span className="text-sm text-slate-500">Trusted by leading brands</span>
-            </div>
-            <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
-              {clients.map((c) => (
-                <div key={c.name} className="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm flex flex-col items-center">
-                  <img
-                    src={c.logo}
-                    alt={c.name}
-                    className="h-12 object-contain"
-                    onError={(e) => {
-                      e.currentTarget.onerror = null;
-                      e.currentTarget.src = `https://placehold.co/160x60?text=${encodeURIComponent(c.name)}`;
-                    }}
-                  />
-                  <p className="font-semibold mt-3" style={{ color: BRAND.primary }}>{c.name}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Reviews */}
       <section id="reviews" className="py-12 md:py-20 bg-slate-50">
@@ -226,35 +199,6 @@ function XspanSite() {
         </div>
       </section>
 
-      {/* Quote / Contact (moved above FAQ) */}
-      <section id="quote" className="py-12 md:py-20">
-        <div className="max-w-5xl mx-auto px-4 md:px-6">
-          <div className="rounded-3xl border border-slate-200 bg-white shadow-sm p-8 md:p-10">
-            <h2 className="text-3xl font-extrabold mb-8">Request a Quote</h2>
-            <form className="grid md:grid-cols-2 gap-4">
-              <input className="border rounded-xl px-3 py-2" placeholder="Your name" />
-              <input className="border rounded-xl px-3 py-2" placeholder="Company" />
-              <input className="border rounded-xl px-3 py-2" placeholder="Email" type="email" />
-              <input className="border rounded-xl px-3 py-2" placeholder="Phone" defaultValue="064 471 6606" />
-              <input className="border rounded-xl px-3 py-2" placeholder="Pickup location" />
-              <input className="border rounded-xl px-3 py-2" placeholder="Drop-off location" />
-              <input className="border rounded-xl px-3 py-2" placeholder="Pickup date" type="date" />
-              <select className="border rounded-xl px-3 py-2">
-                <option>Load type</option>
-                <option>Chilled</option>
-                <option>Frozen</option>
-                <option>Pharma</option>
-                <option>Mixed / Split</option>
-              </select>
-              <textarea className="md:col-span-2 border rounded-xl px-3 py-2" rows={4} placeholder="Notes or Requests" />
-              <div className="md:col-span-2 flex gap-3">
-                <a href={contacts.whatsapp} className="px-5 py-3 rounded-2xl bg-[var(--brand-yellow)] font-semibold text-slate-900">Send on WhatsApp</a>
-                <a href={contacts.tel} className="px-5 py-3 rounded-2xl bg-black text-white font-semibold">Call {contacts.phone}</a>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
 
       {/* FAQ (moved below Quote) */}
       <section id="faq" className="py-12 md:py-20 bg-slate-50">
@@ -290,6 +234,8 @@ function XspanSite() {
             <div className="flex flex-col">
             <div className="font-black tracking-tight text-lg">Xspan Logistics</div>
             <div className="text-xs font-light text-white">Solving Logistics Together</div>
+              <div className="text-xs font-light text-white">---------------------------</div>
+             <div className="text-xs font-light text-white">25 Witbank Road, Sundra, Delmas, 2200</div>
             </div>
             </div>
             {/* Removed footer description paragraph */}
