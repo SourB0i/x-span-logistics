@@ -12,14 +12,7 @@ const BRAND = {
 
 const DEFAULT_IMAGE = "images/mainhero1.jpg"; // fleet photo
 
-const clients = [
-  { name: "Frio Foods", logo: "images/frio-logo.png" },
-  { name: "Eskort", logo: "images/eskort.jpg" },
-  { name: "Molare", logo: "images/Molare-Symbol-01.png" },
-  { name: "Snowlink", logo: "images/snolink.jpg" },
-  { name: "Tip Top Meats", logo: "images/tiptop.jpg" },
-  { name: "Etlin International (PTY) LTD", logo: "images/etlin.png" },
-];
+
 
 const reviews = [
   { quote: "Loads are delivered on time and as communicated.", author: "Operations Manager" },
@@ -54,14 +47,14 @@ const Stat = ({ value, label }) => (
   </div>
 );
 
-const CTAButton = ({ children, className = "", href = "#quote" }) => (
+const CTAButton = ({ children, className = "", href = "#fleet" }) => (
   <a href={href} className={`inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold shadow-md hover:shadow-lg transition ${className}`}>
     {children}
   </a>
 );
 
 function XspanSite() {
-  const contacts = { phone: "064 471 6606", tel: "tel:+27644716606", whatsapp: "https://wa.me/27644716606" };
+  const contacts = { phone: "010 634 4705", tel: "tel:010 634 4705" };
 
   return (
     <div style={{ ['--brand-yellow']: BRAND.accent }} className="min-h-screen bg-white text-slate-900">
@@ -87,8 +80,7 @@ function XspanSite() {
           <a href="#faq" className="hover:opacity-80">FAQ</a>
         </div>
         <div className="hidden md:flex items-center gap-2">
-          <a href={contacts.whatsapp} target="_blank" className="px-3 py-2 rounded-xl text-sm font-semibold border border-slate-200 bg-white hover:bg-slate-50">WhatsApp</a>
-          <a href={contacts.tel} className="px-3 py-2 rounded-xl text-sm bg-[var(--brand-yellow)] font-semibold text-slate-900">{contacts.phone}</a>
+          <a href={contacts.tel} className="px-5 py-3 rounded-2xl text-lg bg-[var(--brand-yellow)] font-bold text-slate-900 pulse-scale shadow-lg">{contacts.phone}</a>
         </div>
       </header>
 
@@ -104,7 +96,6 @@ function XspanSite() {
               21 certified refrigerated trucks. 100+ loads a week. Food-safe handling, live tracking, and express coverage nationwide.
             </p>
             <div className="flex flex-wrap gap-3">
-              <CTAButton className="bg-[var(--brand-yellow)] text-slate-900" href="#quote">Get a Cold-Chain Quote</CTAButton>
               <CTAButton className="bg-white border border-slate-200" href="#fleet">View Fleet</CTAButton>
             </div>
             <div className="text-xs text-slate-500">Solving Logistics Together</div>
@@ -220,10 +211,7 @@ function XspanSite() {
         </div>
       </section>
 
-      {/* Sticky WhatsApp */}
-      <a href={contacts.whatsapp} className="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 px-4 py-3 rounded-full shadow-lg" style={{ background: BRAND.accent }}>
-        <span className="font-semibold text-slate-900">WhatsApp Us</span>
-      </a>
+      {/* Sticky WhatsApp removed */}
 
       <footer className="mt-16 bg-slate-900 text-slate-200">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-12 grid md:grid-cols-4 gap-8">
@@ -236,6 +224,8 @@ function XspanSite() {
             <div className="text-xs font-light text-white">Solving Logistics Together</div>
               <div className="text-xs font-light text-white">---------------------------</div>
              <div className="text-xs font-light text-white">25 Witbank Road, Sundra, Delmas, 2200</div>
+             <div className="text-xs font-light text-white">Email: logisticsadmin@x-span.co.za </div>
+             <div className="text-xs font-light text-white">Alternative Number: 082 449 5650</div>
             </div>
             </div>
             {/* Removed footer description paragraph */}
@@ -259,9 +249,8 @@ function XspanSite() {
           <div>
             <div className="text-sm font-semibold mb-3">Contact</div>
             <ul className="space-y-2 text-sm">
-              <li><a href={contacts.tel} className="hover:text-white">Call: 064 471 6606</a></li>
-              <li><a href={contacts.whatsapp} className="hover:text-white">WhatsApp us</a></li>
-              <li><a href="#quote" className="hover:text-white">Request a quote</a></li>
+              <li><a href={contacts.tel} className="hover:text-white">Call: 010 634 4705</a></li>
+              
             </ul>
           </div>
         </div>
@@ -271,7 +260,7 @@ function XspanSite() {
             <div className="flex items-center gap-4">
               <a href="#faq" className="hover:text-white">FAQ</a>
               <a href="#fleet" className="hover:text-white">Fleet</a>
-              <a href="#quote" className="hover:text-white">Get a Quote</a>
+              
             </div>
           </div>
         </div>
