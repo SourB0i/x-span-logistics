@@ -62,7 +62,7 @@ function XspanSite() {
       <header className="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img
-            src="images/logo.png"
+            src="Images/logo.png"
             alt="Xspan Logistics" 
             className="h-9 w-auto"
             onError={(e) => {
@@ -217,7 +217,7 @@ function XspanSite() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-12 grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-3">
-                <img src="images/logo.png" alt="Xspan Logistics" className="h-9 w-9 rounded-xl object-contain"  />
+                <img src="Images/logo.png" alt="Xspan Logistics" className="h-9 w-9 rounded-xl object-contain"  />
 
             <div className="flex flex-col">
             <div className="font-black tracking-tight text-lg">Xspan Logistics</div>
