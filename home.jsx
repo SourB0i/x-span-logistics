@@ -10,7 +10,7 @@ const BRAND = {
   accent: "#F4C430", // warm yellow
 };
 
-const DEFAULT_IMAGE = "images/mainhero1.jpg"; // fleet photo
+const DEFAULT_IMAGE = "Images/mainhero1.jpg"; // fleet photo
 
 
 
