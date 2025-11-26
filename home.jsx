@@ -211,6 +211,28 @@ function XspanSite() {
         </div>
       </section>
 
+      <section id="drivers" className="py-12 md:py-20 bg-slate-50">
+        <div className="max-w-6xl mx-auto px-4 md:px-6">
+          <div className="rounded-3xl border border-slate-200 bg-white shadow-sm p-8 md:p-10">
+            <div className="flex items-end justify-between mb-8">
+              <h2 className="text-3xl font-extrabold">Driver Requirements</h2>
+            </div>
+            <div className="space-y-4">
+              <p className="text-slate-600">We hire experienced long-distance drivers. Refrigerated transport background required. Be reliable and professional.</p>
+              <ul className="list-disc pl-5 text-slate-700 space-y-2">
+                <li>5+ years long distance experience</li>
+                <li>Minimum 1 year working with reefers</li>
+                <li>No criminal record</li>
+                <li>Good health</li>
+                <li>Strong knowledge of main Southern African routes</li>
+                <li>Own transport or easy access to public transport</li>
+              </ul>
+              <div className="pt-2 text-sm text-slate-700">Send your CV to <a href="mailto:jobs@x-span.co.za" className="font-semibold hover:underline" style={{ color: BRAND.primary }}>jobs@x-span.co.za</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Sticky WhatsApp removed */}
 
       <footer className="mt-16 bg-slate-900 text-slate-200">
